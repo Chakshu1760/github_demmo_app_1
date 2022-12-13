@@ -2,6 +2,8 @@ const express = require('express')
 
 const app = express()
 
+const port = process.env.port || 3500
+
 app.set('view-engine','ejs')
 
 app.get('/',(req,res)=>{
@@ -12,6 +14,6 @@ app.get('/display',(req,res)=>{
     res.render("display.ejs",{author:'chakshu alawadhi'})
 })
 
-app.listen(3500,()=>{
+app.listen(port,()=>{
     console.log("app is listening at port 3500!!")
 })
