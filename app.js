@@ -17,3 +17,5 @@ app.get('/display',(req,res)=>{
 app.listen(port,()=>{
     console.log("app is listening at port 3500!!")
 })
+
+//https://dull-jade-sparrow-tux.cyclic.app/display
